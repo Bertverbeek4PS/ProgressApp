@@ -1,0 +1,26 @@
+{
+  "id": "41ba6a80-7b5c-4b12-b571-f4918291a60d",
+  "name": "ProgressApp",
+  "publisher": "Progress App",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50300,
+      "to": 50349
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ProgressApp.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+}
