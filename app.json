@@ -1,26 +1,21 @@
 {
   "id": "41ba6a80-7b5c-4b12-b571-f4918291a60d",
-  "name": "ProgressApp",
-  "publisher": "Progress App",
+  "name": "Progress App",
+  "publisher": "4PS B.V.",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
-  "dependencies": [],
-  "screenshots": [],
-  "platform": "17.0.0.0",
+  "runtime": "6.0",
+  "showMyCode": true,
+  "target": "Cloud",
   "application": "17.0.0.0",
+  "platform": "17.0.21485.23159",
+  "contextSensitiveHelpUrl": "https://ProgressApp.com/help/",
+  "dependencies": [
+
+  ],
   "idRanges": [
     {
       "from": 50300,
       "to": 50349
     }
-  ],
-  "contextSensitiveHelpUrl": "https://ProgressApp.com/help/",
-  "showMyCode": true,
-  "runtime": "6.0"
+  ]
 }
