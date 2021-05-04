@@ -2,7 +2,7 @@
   "id": "41ba6a80-7b5c-4b12-b571-f4918291a60d",
   "name": "Progress App",
   "publisher": "4PS B.V.",
-  "version": "1.0.0.0",
+  "version": "1.0.0.2",
   "runtime": "6.0",
   "showMyCode": true,
   "target": "Cloud",
