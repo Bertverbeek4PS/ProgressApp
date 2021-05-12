@@ -1,12 +1,12 @@
 page 50316 LeaveType
 {
     PageType = API;
-    Caption = 'leaveType';
+    Caption = 'leaveTypes';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'leaveType';
-    EntitySetName = 'leaveType';
+    EntityName = 'leaveTypes';
+    EntitySetName = 'leaveTypes';
     SourceTable = "Leave Type";
     DelayedInsert = true;
     ODataKeyFields = SystemId;

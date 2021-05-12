@@ -5,8 +5,8 @@ page 50317 CostCode
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'costCode';
-    EntitySetName = 'costCode';
+    EntityName = 'costCodes';
+    EntitySetName = 'costCodes';
     SourceTable = "Cost Code";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
