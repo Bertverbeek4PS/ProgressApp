@@ -1,13 +1,13 @@
-page 50301 UserSetupAPI
+page 50317 CostCode
 {
     PageType = API;
-    Caption = 'userSetup';
+    Caption = 'costCode';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'userSetup';
-    EntitySetName = 'userSetup';
-    SourceTable = "User Setup";
+    EntityName = 'costCode';
+    EntitySetName = 'costCode';
+    SourceTable = "Cost Code";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -17,17 +17,14 @@ page 50301 UserSetupAPI
         {
             repeater(GroupName)
             {
-                field(userId; rec."User ID")
+                field(code; rec.Code)
                 {
-                    Caption = 'User ID';
                 }
-                field(eMail; rec."E-Mail")
+                field(description; rec.Description)
                 {
-                    Caption = 'E-mail';
                 }
-                field(employeeNo; rec."Employee No.")
+                field(component; rec.Component)
                 {
-                    Caption = 'Employee No.';
                 }
                 field(SystemId; rec.SystemId)
                 {
@@ -52,5 +49,4 @@ page 50301 UserSetupAPI
             }
         }
     }
-
 }

@@ -1,13 +1,13 @@
-page 50301 UserSetupAPI
+page 50316 LeaveType
 {
     PageType = API;
-    Caption = 'userSetup';
+    Caption = 'leaveType';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'userSetup';
-    EntitySetName = 'userSetup';
-    SourceTable = "User Setup";
+    EntityName = 'leaveType';
+    EntitySetName = 'leaveType';
+    SourceTable = "Leave Type";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -17,17 +17,11 @@ page 50301 UserSetupAPI
         {
             repeater(GroupName)
             {
-                field(userId; rec."User ID")
+                field(code; rec.Code)
                 {
-                    Caption = 'User ID';
                 }
-                field(eMail; rec."E-Mail")
+                field(description; rec.Description)
                 {
-                    Caption = 'E-mail';
-                }
-                field(employeeNo; rec."Employee No.")
-                {
-                    Caption = 'Employee No.';
                 }
                 field(SystemId; rec.SystemId)
                 {
@@ -52,5 +46,4 @@ page 50301 UserSetupAPI
             }
         }
     }
-
 }

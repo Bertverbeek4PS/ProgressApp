@@ -1,13 +1,13 @@
-page 50301 UserSetupAPI
+page 50318 WageComponents
 {
     PageType = API;
-    Caption = 'userSetup';
+    Caption = 'wageComponents';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'userSetup';
-    EntitySetName = 'userSetup';
-    SourceTable = "User Setup";
+    EntityName = 'wageComponents';
+    EntitySetName = 'wageComponents';
+    SourceTable = "Wage Component";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -17,17 +17,20 @@ page 50301 UserSetupAPI
         {
             repeater(GroupName)
             {
-                field(userId; rec."User ID")
+                field(code; rec.Code)
                 {
-                    Caption = 'User ID';
                 }
-                field(eMail; rec."E-Mail")
+                field(description; rec.Description)
                 {
-                    Caption = 'E-mail';
                 }
-                field(employeeNo; rec."Employee No.")
+                field(componentType; rec."Component Type")
                 {
-                    Caption = 'Employee No.';
+                }
+                field(leaveType; rec."Leave Type")
+                {
+                }
+                field(leaveFactor; rec."Leave Factor")
+                {
                 }
                 field(SystemId; rec.SystemId)
                 {
@@ -52,5 +55,4 @@ page 50301 UserSetupAPI
             }
         }
     }
-
 }

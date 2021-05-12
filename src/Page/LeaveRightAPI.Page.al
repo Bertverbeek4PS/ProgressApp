@@ -1,13 +1,13 @@
-page 50301 UserSetupAPI
+page 50314 LeaveRight
 {
     PageType = API;
-    Caption = 'userSetup';
+    Caption = 'leaveRight';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'userSetup';
-    EntitySetName = 'userSetup';
-    SourceTable = "User Setup";
+    EntityName = 'leaveRight';
+    EntitySetName = 'leaveRight';
+    SourceTable = "Leave Right";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -17,17 +17,17 @@ page 50301 UserSetupAPI
         {
             repeater(GroupName)
             {
-                field(userId; rec."User ID")
-                {
-                    Caption = 'User ID';
-                }
-                field(eMail; rec."E-Mail")
-                {
-                    Caption = 'E-mail';
-                }
                 field(employeeNo; rec."Employee No.")
                 {
-                    Caption = 'Employee No.';
+                }
+                field(leaveType; rec."Leave Type")
+                {
+                }
+                field(startDate; rec."Start Date")
+                {
+                }
+                field(hoursPerYear; rec."Hours Per Year")
+                {
                 }
                 field(SystemId; rec.SystemId)
                 {
@@ -52,5 +52,4 @@ page 50301 UserSetupAPI
             }
         }
     }
-
 }

@@ -1,13 +1,13 @@
-page 50301 UserSetupAPI
+page 50313 CauseofAbsence
 {
     PageType = API;
-    Caption = 'userSetup';
+    Caption = 'causeofAbsence';
     APIPublisher = '4PS';
     APIGroup = 'ProgressApp';
     APIVersion = 'v1.0';
-    EntityName = 'userSetup';
-    EntitySetName = 'userSetup';
-    SourceTable = "User Setup";
+    EntityName = 'causeofAbsence';
+    EntitySetName = 'causeofAbsence';
+    SourceTable = "Cause of Absence";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -17,17 +17,14 @@ page 50301 UserSetupAPI
         {
             repeater(GroupName)
             {
-                field(userId; rec."User ID")
+                field(code; rec.Code)
                 {
-                    Caption = 'User ID';
                 }
-                field(eMail; rec."E-Mail")
+                field(description; rec.Description)
                 {
-                    Caption = 'E-mail';
                 }
-                field(employeeNo; rec."Employee No.")
+                field(unitofMeasureCode; rec."Unit of Measure Code")
                 {
-                    Caption = 'Employee No.';
                 }
                 field(SystemId; rec.SystemId)
                 {
@@ -52,5 +49,4 @@ page 50301 UserSetupAPI
             }
         }
     }
-
 }

@@ -69,9 +69,7 @@ page 50311 PurchRcptHeader
         SetActionResponse(ActionContext, Page::ProgressLevelAPI, SystemId);
     end;
 
-    local procedure SetActionResponse(var ActionContext: WebServiceActionContext;
-    PageId: Integer;
-    SystemId: Guid)
+    local procedure SetActionResponse(var ActionContext: WebServiceActionContext; PageId: Integer; SystemId: Guid)
     var
     begin
         ActionContext.SetObjectType(ObjectType::Page);
